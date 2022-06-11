@@ -11,7 +11,7 @@ resource webAppHostingPlan 'Microsoft.Web/serverfarms@2020-06-01' = {
     reserved: false
   }
   sku: {
-    name: 'B1'
+    name: 'P1v2'
     capacity: 1
   }
 }
@@ -107,7 +107,7 @@ resource diagnostics 'microsoft.insights/diagnosticSettings@2017-05-01-preview' 
       }
       {
         category: 'AppServiceFileAuditLogs'
-        enabled: false
+        enabled: true
       }
       {
         category: 'AppServiceAppLogs'
