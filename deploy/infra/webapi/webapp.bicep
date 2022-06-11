@@ -107,7 +107,7 @@ resource diagnostics 'microsoft.insights/diagnosticSettings@2017-05-01-preview' 
       }
       {
         category: 'AppServiceFileAuditLogs'
-        enabled: true
+        enabled: false
       }
       {
         category: 'AppServiceAppLogs'
